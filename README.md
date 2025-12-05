@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🧪 Software Testing Project - Triangle & NextDate
 
 ## 📋 Tổng quan
@@ -301,3 +302,6 @@ Course Software Testing
 =======
 # team6
 >>>>>>> branch 'main' of https://github.com/Push-3125/team6.git
+=======
+# team6
+>>>>>>> ddb3b949a786d03c0232493648c9efd27bda65a1
