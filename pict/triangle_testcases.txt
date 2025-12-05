@@ -1,0 +1,10 @@
+Side_A	Side_B	Side_C
+Medium	Large	Small
+Large	Small	Large
+Small	Medium	Medium
+Large	Large	Medium
+Small	Small	Small
+Medium	Medium	Large
+Large	Medium	Small
+Medium	Small	Medium
+Small	Large	Large

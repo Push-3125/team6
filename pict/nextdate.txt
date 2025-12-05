@@ -1,0 +1,28 @@
+# PICT Configuration for NextDate Testing
+# Pairwise Independent Combinatorial Testing
+
+# Parameters
+Day: Start, Middle, End28, End29, End30, End31
+Month: Jan, Feb, Apr, Dec
+Year: NonLeap, Leap
+
+# Constraints
+# Tháng 2 không có ngày 29, 30, 31 (năm không nhuận)
+IF [Month] = "Feb" AND [Year] = "NonLeap" THEN [Day] IN {"Start", "Middle", "End28"};
+
+# Tháng 2 năm nhuận không có ngày 30, 31
+IF [Month] = "Feb" AND [Year] = "Leap" THEN [Day] <> "End30" AND [Day] <> "End31";
+
+# Tháng 4 không có ngày 31
+IF [Month] = "Apr" THEN [Day] <> "End31";
+
+# Value definitions:
+# Day: Start=1, Middle=15, End28=28, End29=29, End30=30, End31=31
+# Month: Jan=1, Feb=2, Apr=4, Dec=12
+# Year: NonLeap=2023, Leap=2020
+
+# Cách sử dụng PICT:
+# 1. Cài đặt PICT: https://github.com/Microsoft/pict
+# 2. Chạy lệnh: pict nextdate.txt > nextdate_testcases.txt
+# 3. PICT sẽ tạo ra các test cases tối ưu
+# 4. Implement các test cases dựa trên output
