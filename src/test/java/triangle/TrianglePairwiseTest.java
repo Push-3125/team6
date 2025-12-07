@@ -27,26 +27,34 @@ public class TrianglePairwiseTest {
     }
 
     @Test
-    @DisplayName("TRI_PW_23: Pairwise Small-Large-Large (1,100,100)")
-    void testPairwiseSmallLargeLarge() {
-        String result = triangle.classifyTriangle(1, 100, 100);
+    @DisplayName("TRI_PW_23: Small-Medium boundary (8,50,50)")
+    void testPairwiseSmallMediumBoundary() {
+        String result = triangle.classifyTriangle(8, 50, 50);
         assertEquals("Isosceles", result, 
-            "Kết hợp: Side_A=Small, Side_B=Large, Side_C=Large -> Isosceles");
+            "Kết hợp: Small-Medium-Medium, test boundary giữa 2 vùng");
     }
 
     @Test
-    @DisplayName("TRI_PW_24: Pairwise invalid mix (1,2,10)")
-    void testPairwiseInvalidMix() {
-        String result = triangle.classifyTriangle(1, 2, 10);
-        assertEquals("Not a triangle", result, 
-            "Kết hợp: Side_A=Small, Side_B=Small, Side_C=Small (không hợp lệ)");
-    }
-
-    @Test
-    @DisplayName("TRI_PW_25: Pairwise valid mix (2,3,4)")
-    void testPairwiseValidMix() {
-        String result = triangle.classifyTriangle(2, 3, 4);
+    @DisplayName("TRI_PW_24: Medium-Large boundary (50,150,180)")
+    void testPairwiseMediumLargeBoundary() {
+        String result = triangle.classifyTriangle(50, 150, 180);
         assertEquals("Scalene", result, 
-            "Kết hợp: Side_A=Small, Side_B=Small, Side_C=Small (hợp lệ) -> Scalene");
+            "Kết hợp: Medium-Large-Large, test boundary giữa 2 vùng");
+    }
+
+    @Test
+    @DisplayName("TRI_PW_25: Small-Large gap (5,80,150)")
+    void testPairwiseSmallLargeGap() {
+        String result = triangle.classifyTriangle(5, 80, 150);
+        assertEquals("Not a triangle", result, 
+            "Kết hợp: Small-Medium-Large với khoảng cách lớn → Invalid");
+    }
+
+    @Test
+    @DisplayName("TRI_PW_26: Medium-Medium-Medium (60,70,80)")
+    void testPairwiseMediumRange() {
+        String result = triangle.classifyTriangle(60, 70, 80);
+        assertEquals("Scalene", result, 
+            "Kết hợp: Medium-Medium-Medium, test tam giác trong vùng Medium");
     }
 }

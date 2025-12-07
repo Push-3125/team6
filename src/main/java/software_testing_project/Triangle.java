@@ -67,16 +67,4 @@ public class Triangle {
     public boolean checkTriangleInequality(int a, int b, int c) {
         return isTriangle(a, b, c);
     }
-
-    // Main method để test thủ công
-    public static void main(String[] args) {
-        Triangle triangle = new Triangle();
-        
-        // Test cases mẫu
-        System.out.println("Test 1 (5,5,5): " + triangle.classifyTriangle(5, 5, 5));
-        System.out.println("Test 2 (5,5,3): " + triangle.classifyTriangle(5, 5, 3));
-        System.out.println("Test 3 (4,5,6): " + triangle.classifyTriangle(4, 5, 6));
-        System.out.println("Test 4 (0,5,5): " + triangle.classifyTriangle(0, 5, 5));
-        System.out.println("Test 5 (-1,5,5): " + triangle.classifyTriangle(-1, 5, 5));
-    }
 }

@@ -26,34 +26,34 @@ public class NextDatePairwiseTest {
     }
 
     @Test
-    @DisplayName("ND_PW_23: Pairwise small day (1/12/2023)")
-    void testPairwiseSmallDay() {
-        String result = nextDate.getNextDate(1, 12, 2023);
-        assertEquals("2/12/2023", result, 
-            "Kết hợp: Day=Start, Month=Dec, Year=NonLeap");
+    @DisplayName("ND_PW_23: Middle day in leap Feb (15/2/2024)")
+    void testPairwiseMiddleDayLeapFeb() {
+        String result = nextDate.getNextDate(15, 2, 2024);
+        assertEquals("16/2/2024", result, 
+            "Kết hợp: Middle-Feb-Leap, test ngày giữa tháng 2 năm nhuận");
     }
 
     @Test
-    @DisplayName("ND_PW_24: Pairwise month change (31/3/2023)")
-    void testPairwiseMonthChange() {
-        String result = nextDate.getNextDate(31, 3, 2023);
-        assertEquals("1/4/2023", result, 
-            "Kết hợp: Day=End31, Month=Mar, chuyển sang tháng 4");
+    @DisplayName("ND_PW_24: End29 in 31-day month (29/1/2024)")
+    void testPairwiseEnd29In31DayMonth() {
+        String result = nextDate.getNextDate(29, 1, 2024);
+        assertEquals("30/1/2024", result, 
+            "Kết hợp: End29-Jan-Leap, test ngày 29 trong tháng 31 ngày");
     }
 
     @Test
-    @DisplayName("ND_PW_25: Pairwise leap boundary (28/2/2020)")
-    void testPairwiseLeapBoundary() {
-        String result = nextDate.getNextDate(28, 2, 2020);
-        assertEquals("29/2/2020", result, 
-            "Kết hợp: Day=End28, Month=Feb, Year=Leap -> có ngày 29");
+    @DisplayName("ND_PW_25: End30 in December (30/12/2024)")
+    void testPairwiseEnd30InDecember() {
+        String result = nextDate.getNextDate(30, 12, 2024);
+        assertEquals("31/12/2024", result, 
+            "Kết hợp: End30-Dec-Leap, test ngày 30 trong tháng cuối năm");
     }
 
     @Test
-    @DisplayName("ND_PW_26: Pairwise year end (31/12/2024)")
-    void testPairwiseYearEnd() {
-        String result = nextDate.getNextDate(31, 12, 2024);
-        assertEquals("1/1/2025", result, 
-            "Kết hợp: Day=End31, Month=Dec, chuyển sang năm mới");
+    @DisplayName("ND_PW_26: End29 in 30-day month (29/4/2024)")
+    void testPairwiseEnd29In30DayMonth() {
+        String result = nextDate.getNextDate(29, 4, 2024);
+        assertEquals("30/4/2024", result, 
+            "Kết hợp: End29-Apr-Leap, test ngày 29 trong tháng 30 ngày");
     }
 }

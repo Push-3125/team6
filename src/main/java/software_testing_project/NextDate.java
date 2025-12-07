@@ -110,17 +110,4 @@ public class NextDate {
     public int checkDaysInMonth(int month, int year) {
         return getDaysInMonth(month, year);
     }
-
-    // Main method để test thủ công
-    public static void main(String[] args) {
-        NextDate nd = new NextDate();
-        
-        // Test cases mẫu
-        System.out.println("Test 1 (10/3/2023): " + nd.getNextDate(10, 3, 2023));
-        System.out.println("Test 2 (30/4/2023): " + nd.getNextDate(30, 4, 2023));
-        System.out.println("Test 3 (31/12/2023): " + nd.getNextDate(31, 12, 2023));
-        System.out.println("Test 4 (28/2/2023): " + nd.getNextDate(28, 2, 2023));
-        System.out.println("Test 5 (29/2/2024): " + nd.getNextDate(29, 2, 2024));
-        System.out.println("Test 6 (32/1/2023): " + nd.getNextDate(32, 1, 2023));
-    }
 }
