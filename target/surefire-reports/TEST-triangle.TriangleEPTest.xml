@@ -1,75 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="triangle.TriangleEPTest" time="0.044" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="triangle.TriangleEPTest" time="0.013" tests="12" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="21"/>
+    <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\software_testing_project\target\test-classes;D:\software_testing_project\target\classes;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\LENOVO\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\LENOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;"/>
+    <property name="java.class.path" value="D:\GrPrj_Testing\team6\target\test-classes;D:\GrPrj_Testing\team6\target\classes;C:\Users\LOVOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\LOVOVO\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\LOVOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\LOVOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LOVOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\LOVOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\LOVOVO\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="user.timezone" value="Asia/Saigon"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="21"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.version" value="25"/>
     <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="D:\LENOVO\Documents\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\LENOVO\AppData\Local\Temp\surefire12588915341743693598\surefirebooter-20251210083135557_3.jar C:\Users\LENOVO\AppData\Local\Temp\surefire12588915341743693598 2025-12-10T08-31-35_344-jvmRun1 surefire-20251210083135557_1tmp surefire_0-20251210083135557_2tmp"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin"/>
+    <property name="sun.java.command" value="C:\Users\LOVOVO\AppData\Local\Temp\surefire14081996589287917488\surefirebooter-20251210083747205_3.jar C:\Users\LOVOVO\AppData\Local\Temp\surefire14081996589287917488 2025-12-10T08-37-47_048-jvmRun1 surefire-20251210083747205_1tmp surefire_0-20251210083747205_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\software_testing_project\target\test-classes;D:\software_testing_project\target\classes;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\LENOVO\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\LENOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\LENOVO\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;"/>
+    <property name="surefire.test.class.path" value="D:\GrPrj_Testing\team6\target\test-classes;D:\GrPrj_Testing\team6\target\classes;C:\Users\LOVOVO\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\LOVOVO\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\LOVOVO\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\LOVOVO\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LOVOVO\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\LOVOVO\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\LOVOVO\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\LENOVO"/>
+    <property name="user.home" value="C:\Users\LOVOVO"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2024-07-16"/>
-    <property name="java.home" value="D:\LENOVO\Documents\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Program Files\Apache NetBeans\jdk"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\software_testing_project"/>
-    <property name="style.color" value="always"/>
+    <property name="basedir" value="D:\GrPrj_Testing\team6"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LENOVO\AppData\Local\Temp\surefire12588915341743693598\surefirebooter-20251210083135557_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LOVOVO\AppData\Local\Temp\surefire14081996589287917488\surefirebooter-20251210083747205_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="21.0.4+7-LTS"/>
-    <property name="user.name" value="LENOVO"/>
+    <property name="java.runtime.version" value="25.0.1+8-LTS"/>
+    <property name="user.name" value="LOVOVO"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Temurin-21.0.4+7"/>
-    <property name="localRepository" value="C:\Users\LENOVO\.m2\repository"/>
+    <property name="java.vendor.version" value="Temurin-25.0.1+8"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\Apache NetBeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\LOVOVO\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
-    <property name="java.io.tmpdir" value="C:\Users\LENOVO\AppData\Local\Temp\"/>
-    <property name="java.version" value="21.0.4"/>
-    <property name="user.dir" value="D:\software_testing_project"/>
+    <property name="java.io.tmpdir" value="C:\Users\LOVOVO\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="D:\GrPrj_Testing\team6"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="D:\LENOVO\Documents\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/LENOVO/OneDrive/Máy tính/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.9.v20251105-0741/jre/bin/server;C:/Users/LENOVO/OneDrive/Máy tính/eclipse//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.9.v20251105-0741/jre/bin;C:\Program Files\Java\jdk-25\\bin;D:\apache-maven-3.9.9\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\msys64\ucrt64\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;D:\LENOVO\Git Bash\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\nodejs;C:\Users\LENOVO\Tools\PICT;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\LENOVO\AppData\Local\Microsoft\WindowsApps;C:\Users\LENOVO\AppData\Local\Programs\Microsoft VS Code\bin;C:\ProgramData\LENOVO\GitHubDesktop\bin;C:\Users\LENOVO\AppData\Roaming\npm;C:\Users\LENOVO\OneDrive\Máy tính\eclipse;;."/>
-    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-25\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\LOVOVO\AppData\Local\Microsoft\WindowsApps;C:\Users\LOVOVO\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\Users\LOVOVO\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
-    <property name="java.vm.version" value="21.0.4+7-LTS"/>
+    <property name="java.vm.version" value="25.0.1+8-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="65.0"/>
+    <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testEP7_SideOver200" classname="triangle.TriangleEPTest" time="0.005"/>
-  <testcase name="testEP4_Isosceles_AC" classname="triangle.TriangleEPTest" time="0.004"/>
-  <testcase name="testEP6_SideNegative" classname="triangle.TriangleEPTest" time="0.004"/>
-  <testcase name="testEP3_Isosceles_BC" classname="triangle.TriangleEPTest" time="0.002"/>
-  <testcase name="testEP1_Equilateral" classname="triangle.TriangleEPTest" time="0.002"/>
-  <testcase name="testEP9_ViolateAC" classname="triangle.TriangleEPTest" time="0.002"/>
-  <testcase name="testEP2_Isosceles_AB" classname="triangle.TriangleEPTest" time="0.002"/>
-  <testcase name="testEP8_SumEqual" classname="triangle.TriangleEPTest" time="0.002"/>
-  <testcase name="testEP5_Scalene" classname="triangle.TriangleEPTest" time="0.002"/>
-  <testcase name="testEP8_ViolateAB" classname="triangle.TriangleEPTest" time="0.001"/>
+  <testcase name="testEP7_SideOver200" classname="triangle.TriangleEPTest" time="0.001"/>
+  <testcase name="testEP4_Isosceles_AC" classname="triangle.TriangleEPTest" time="0.001"/>
+  <testcase name="testEP6_SideNegative" classname="triangle.TriangleEPTest" time="0"/>
+  <testcase name="testEP3_Isosceles_BC" classname="triangle.TriangleEPTest" time="0"/>
+  <testcase name="testEP1_Equilateral" classname="triangle.TriangleEPTest" time="0"/>
+  <testcase name="testEP9_ViolateAC" classname="triangle.TriangleEPTest" time="0.001"/>
+  <testcase name="testEP2_Isosceles_AB" classname="triangle.TriangleEPTest" time="0.001"/>
+  <testcase name="testEP8_SumEqual" classname="triangle.TriangleEPTest" time="0.001"/>
+  <testcase name="testEP5_Scalene" classname="triangle.TriangleEPTest" time="0.001"/>
+  <testcase name="testEP8_ViolateAB" classname="triangle.TriangleEPTest" time="0"/>
   <testcase name="testEP6_SideZero" classname="triangle.TriangleEPTest" time="0.001"/>
   <testcase name="testEP10_ViolateBC" classname="triangle.TriangleEPTest" time="0.001"/>
 </testsuite>

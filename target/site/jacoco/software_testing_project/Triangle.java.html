@@ -40,11 +40,11 @@
 <span class="fc bfc" id="L40" title="All 4 branches covered.">        if (a &lt; MIN_SIDE || a &gt; MAX_SIDE) {</span>
 <span class="fc" id="L41">            return false;</span>
         }
-<span class="fc bfc" id="L43" title="All 4 branches covered.">        if (b &lt; MIN_SIDE || b &gt; MAX_SIDE) {</span>
-<span class="fc" id="L44">            return false;</span>
+<span class="pc bpc" id="L43" title="2 of 4 branches missed.">        if (b &lt; MIN_SIDE || b &gt; MAX_SIDE) {</span>
+<span class="nc" id="L44">            return false;</span>
         }
-<span class="fc bfc" id="L46" title="All 4 branches covered.">        if (c &lt; MIN_SIDE || c &gt; MAX_SIDE) {</span>
-<span class="fc" id="L47">            return false;</span>
+<span class="pc bpc" id="L46" title="2 of 4 branches missed.">        if (c &lt; MIN_SIDE || c &gt; MAX_SIDE) {</span>
+<span class="nc" id="L47">            return false;</span>
         }
 <span class="fc" id="L49">        return true;</span>
     }
@@ -61,11 +61,11 @@
      * Method để test từng điều kiện riêng lẻ (hỗ trợ white-box testing)
      */
     public boolean checkValidInput(int a, int b, int c) {
-<span class="fc" id="L64">        return isValidInput(a, b, c);</span>
+<span class="nc" id="L64">        return isValidInput(a, b, c);</span>
     }
 
     public boolean checkTriangleInequality(int a, int b, int c) {
-<span class="fc" id="L68">        return isTriangle(a, b, c);</span>
+<span class="nc" id="L68">        return isTriangle(a, b, c);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

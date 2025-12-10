@@ -26,7 +26,7 @@ public class NextDatePairwiseTest {
     }
 
     @Test
-    @DisplayName("ND_PW_23: Middle day in leap Feb (15/2/2024)")
+    @DisplayName("ND_PW_01: Middle day in leap Feb (15/2/2024)")
     void testPairwiseMiddleDayLeapFeb() {
         String result = nextDate.getNextDate(15, 2, 2024);
         assertEquals("16/2/2024", result, 
@@ -34,7 +34,7 @@ public class NextDatePairwiseTest {
     }
 
     @Test
-    @DisplayName("ND_PW_24: End29 in 31-day month (29/1/2024)")
+    @DisplayName("ND_PW_02: End29 in 31-day month (29/1/2024)")
     void testPairwiseEnd29In31DayMonth() {
         String result = nextDate.getNextDate(29, 1, 2024);
         assertEquals("30/1/2024", result, 
@@ -42,7 +42,7 @@ public class NextDatePairwiseTest {
     }
 
     @Test
-    @DisplayName("ND_PW_25: End30 in December (30/12/2024)")
+    @DisplayName("ND_PW_03: End30 in December (30/12/2024)")
     void testPairwiseEnd30InDecember() {
         String result = nextDate.getNextDate(30, 12, 2024);
         assertEquals("31/12/2024", result, 
@@ -50,7 +50,7 @@ public class NextDatePairwiseTest {
     }
 
     @Test
-    @DisplayName("ND_PW_26: End29 in 30-day month (29/4/2024)")
+    @DisplayName("ND_PW_04: End29 in 30-day month (29/4/2024)")
     void testPairwiseEnd29In30DayMonth() {
         String result = nextDate.getNextDate(29, 4, 2024);
         assertEquals("30/4/2024", result, 

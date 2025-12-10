@@ -27,7 +27,7 @@ public class TrianglePairwiseTest {
     }
 
     @Test
-    @DisplayName("TRI_PW_23: Small-Medium boundary (8,50,50)")
+    @DisplayName("TRI_PW_01: Small-Medium boundary (8,50,50)")
     void testPairwiseSmallMediumBoundary() {
         String result = triangle.classifyTriangle(8, 50, 50);
         assertEquals("Isosceles", result, 
@@ -35,7 +35,7 @@ public class TrianglePairwiseTest {
     }
 
     @Test
-    @DisplayName("TRI_PW_24: Medium-Large boundary (50,150,180)")
+    @DisplayName("TRI_PW_02: Medium-Large boundary (50,150,180)")
     void testPairwiseMediumLargeBoundary() {
         String result = triangle.classifyTriangle(50, 150, 180);
         assertEquals("Scalene", result, 
@@ -43,7 +43,7 @@ public class TrianglePairwiseTest {
     }
 
     @Test
-    @DisplayName("TRI_PW_25: Small-Large gap (5,80,150)")
+    @DisplayName("TRI_PW_03: Small-Large gap (5,80,150)")
     void testPairwiseSmallLargeGap() {
         String result = triangle.classifyTriangle(5, 80, 150);
         assertEquals("Not a triangle", result, 
@@ -51,7 +51,7 @@ public class TrianglePairwiseTest {
     }
 
     @Test
-    @DisplayName("TRI_PW_26: Medium-Medium-Medium (60,70,80)")
+    @DisplayName("TRI_PW_04: Medium-Medium-Medium (60,70,80)")
     void testPairwiseMediumRange() {
         String result = triangle.classifyTriangle(60, 70, 80);
         assertEquals("Scalene", result, 
